@@ -178,7 +178,7 @@ app.post("/api/pdf/upload", upload.single("pdf"), (req, res) => {
   res.json({
     success: true,
     pdf: pdfObj,
-    reviewUrl: `http://localhost:3000/review/${id}`,
+    reviewUrl: `https://updated-project-frontend.vercel.app/review/${id}`,
   });
 });
 

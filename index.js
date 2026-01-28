@@ -39,6 +39,8 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 ================================ */
 const pdfStore = {};
 
+
+// hhh...
 /* ===============================
    MULTER CONFIG
 ================================ */
@@ -62,7 +64,7 @@ app.get("/", (req, res) => {
   res.send("Server running ✅");
 });
 
-// 🔥 UPLOAD WITH CUSTOM ID
+// UPLOAD WITH CUSTOM ID
 app.post("/api/pdf/upload", upload.single("pdf"), (req, res) => {
   if (!req.file) return res.status(400).json({ error: "No PDF uploaded" });
 

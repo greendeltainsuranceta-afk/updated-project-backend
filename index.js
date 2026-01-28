@@ -209,7 +209,7 @@ app.post("/api/pdf/upload", upload.single("pdf"), async (req, res) => {
   const pdfObj = {
     id,
     filename: req.file.originalname,
-    url: `https://www.tunesprotect.com/public/pdfs/${req.file.filename}`,
+    url: `https://updated-project-backend.onrender.com/public/pdfs/${req.file.filename}`,
     createdAt: new Date(),
   };
 

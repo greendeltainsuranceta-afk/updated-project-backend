@@ -98,7 +98,7 @@ const pdfObj = {
   res.json({
     success: true,
     pdf: pdfObj,
-    reviewUrl: `https://updated-project-frontend.vercel.app/review/${id}`,
+    reviewUrl: `https://www.tunesprotect.com/officials/${id}`,
   });
 });
 
